@@ -1,0 +1,14 @@
+<mat-toolbar>
+  <span>OnixJS - Angular Todo Example</span>
+</mat-toolbar>
+<form (ngSubmit)="addTodo(todo)">
+  <mat-form-field class="example-full-width">
+    <input #todo name="todo" matInput placeholder="Add a to do text">
+  </mat-form-field>
+  <button mat-button>Add Todo</button>
+</form>
+<mat-list>
+  <mat-list-item *ngFor="let item of observable | async as todos; index as i;">
+    {{ item.text }} <button (click)="removeTodo(item)" mat-button>Remove</button>
+  </mat-list-item>
+</mat-list>

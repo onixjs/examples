@@ -35,7 +35,17 @@ export class TodoComponent implements IComponent {
    * Here we inject a singleton instance of TodoService.
    */
   @Inject.Service(TodoService) private service: TodoService;
-  init() { }
+  /**
+   * @method init
+   * @description This method will be executed by the framework
+   * when everything has been configured.
+   */
+  init() {
+    // Some emmiters won't require a max number of listeners
+    // Others will. That is up to you and your infrastructure.
+    // You can also use Mongo/Redis PubSub instead of Emmiters
+    this.emmiter.setMaxListeners(0);
+  }
   /**
    * @method addTodo
    * @param todo
