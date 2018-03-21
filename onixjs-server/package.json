@@ -1,0 +1,25 @@
+{
+  "name": "onixjs-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./dist/index",
+    "build-start": "npm run update && tsc && node ./dist/index",
+    "update": "cd ../../onixjs-core && npm run build && cd ../onixjs-examples/onixjs-server && npm install ../../onixjs-core && cd ../../onixjs-sdk && npm run build && cd ../onixjs-examples/onixjs-server && npm install ../../onixjs-sdk"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@onixjs/core": "^1.0.0-alpha.7.2",
+    "@onixjs/sdk": "file:../../onixjs-sdk",
+    "mongoose": "^5.0.9",
+    "uws": "^9.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "@types/uws": "^0.13.2",
+    "typescript": "^2.7.2"
+  }
+}
