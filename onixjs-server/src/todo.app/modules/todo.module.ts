@@ -14,7 +14,6 @@ import {TodoService} from './todo.service';
   services: [TodoService],
   components: [TodoComponent],
   lifecycle: async (app, metadata, method): Promise<any> => {
-    console.log('I could be doing some authentication here');
     // before call
     const result = await method();
     // after call
