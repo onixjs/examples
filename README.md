@@ -22,10 +22,28 @@ $ npm run start
 
 The commands just described will start a OnixJS Server, ready to serve Client Applications. Running the front end examples will require different approaches.
 
-**Example Angular App:**
+**Angular App Example:**
 
 ```sh
 $ cd onixjs-ng
 $ npm install
 $ ng serve
 ```
+**React App Example:**
+
+```sh
+$ cd onixjs-react
+$ yarn install
+$ yarn start
+```
+
+> **HINT: ** Load both client applications and have fun watching how updates are reflected in any of these examples.
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars0.githubusercontent.com/u/1533239?v=3" width="100px;"/><br /><sub>Jonathan Casarrubias</sub>](http://mean.expert/)<br />[💻](https://github.com/onixjs/core/commits?author=jonathan-casarrubias) |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!

@@ -20,5 +20,8 @@ export class TodoModel implements IModel {
   _id?: string;
   // Same as the schema but this will be used when creating
   // New instances of the TodoModel Class
-  @Property(String) text: String;
+  @Property({
+    type: String,
+    required: true
+  }) text: String;
 }
