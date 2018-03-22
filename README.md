@@ -17,7 +17,7 @@ Install the NPM modules from the `onixjs-server` directory and from any front-en
 ```sh
 $ cd onixjs-server
 $ npm install
-$ npm run start
+$ npm start
 ```
 
 The commands just described will start a OnixJS Server, ready to serve Client Applications. Running the front end examples will require different approaches.
@@ -36,8 +36,15 @@ $ cd onixjs-react
 $ yarn install
 $ yarn start
 ```
+**Vue App Example:**
 
-> **HINT: ** Load both client applications and have fun watching how updates are reflected in any of these examples.
+```sh
+$ cd onixjs-vue
+$ yarn install
+$ yarn start
+```
+
+> **HINT:** Run many client applications at the same time and have fun watching how updates are reflected in any of these examples in real-time.
 
 ## Contributors
 
