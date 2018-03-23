@@ -40,6 +40,13 @@ $ yarn start
 
 ```sh
 $ cd onixjs-vue
+$ yarn install
+$ yarn start
+```
+**StencilJs App Example:**
+
+```sh
+$ cd onixjs-stencil
 $ npm install
 $ npm run dev
 ```
