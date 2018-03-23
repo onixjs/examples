@@ -4,3 +4,4 @@ dist6
 package-lock.json
 .tmp
 tmp
+build

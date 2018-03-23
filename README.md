@@ -43,6 +43,13 @@ $ cd onixjs-vue
 $ yarn install
 $ yarn start
 ```
+**StencilJs App Example:**
+
+```sh
+$ cd onixjs-stencil
+$ npm install
+$ npm start
+```
 
 > **HINT:** Run many client applications at the same time and have fun watching how updates are reflected in any of these examples in real-time.
 
