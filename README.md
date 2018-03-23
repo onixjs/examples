@@ -2,7 +2,7 @@ OnixJS - FrameWork [![Beerpay](https://beerpay.io/onixjs/core/badge.svg?style=be
 ================
 ![alt text](https://raw.githubusercontent.com/onixjs/core/master/misc/onix-splash.png "OnixJS")
 
-This repository contains example of a OnixJS Project implementing different Front-End Frameworks
+This repository contains example of a OnixJS Project implementing different Front-End Frameworks.
 
 # Installation
 
@@ -48,7 +48,7 @@ $ yarn start
 ```sh
 $ cd onixjs-stencil
 $ npm install
-$ npm start
+$ npm run dev
 ```
 
 > **HINT:** Run many client applications at the same time and have fun watching how updates are reflected in any of these examples in real-time.
