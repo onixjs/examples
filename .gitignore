@@ -5,3 +5,6 @@ package-lock.json
 .tmp
 tmp
 build
+platforms/
+onixjs-nativescript/app/**/*.js
+onixjs-nativescript/app/**/*.js.map

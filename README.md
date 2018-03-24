@@ -50,6 +50,16 @@ $ cd onixjs-stencil
 $ npm install
 $ npm run dev
 ```
+**Nativescript App Example:**
+
+```sh
+$ cd onixjs-nativescript
+$ npm install
+$ tns platform add ios
+$ tns run ios
+$ tns platform add android
+$ tns run android
+```
 
 > **HINT:** Run many client applications at the same time and have fun watching how updates are reflected in any of these examples in real-time.
 
