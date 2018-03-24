@@ -1,0 +1,16 @@
+<ActionBar title="OnixJS - Nativescript Todo Example" class="action-bar">
+</ActionBar>
+<GridLayout rows="auto, *" class="page">
+  <StackLayout row="0" class="form">
+    <TextField hint="Enter todo" class="input input-rounded input-todo" [(ngModel)]="todo.text"></TextField>
+    <Button text="ADD TODO" class="btn btn-primary btn-rounded-lg" (tap)="addTodo()"></Button>
+  </StackLayout>
+  <ListView row="1" [items]="observable | async" class="list-group">
+    <ng-template let-item="item">
+      <GridLayout columns="*, auto">
+        <Label col="0" [text]="item.text" class="list-group-item"></Label>
+        <Button col="1" text="X" class="btn btn-rounded-lg btn-outline remove-todo-btn" (tap)="removeTodo(item)"></Button>
+      </GridLayout>
+    </ng-template>
+  </ListView>
+</GridLayout>
