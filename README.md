@@ -66,8 +66,8 @@ $ tns run android
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars0.githubusercontent.com/u/1533239?v=3" width="100px;"/><br /><sub>Jonathan Casarrubias</sub>](http://mean.expert/)<br />[💻](https://github.com/onixjs/examples/commits?author=jonathan-casarrubias) | [<img src="https://avatars1.githubusercontent.com/u/12107518?v=3" width="100px;"/><br /><sub>Andres David Jimenez</sub>](https://plus.google.com/+AndresJimenezS/posts)<br />[💻](https://github.com/onixjs/examples/commits?author=kattsushi) |
-| :---: | :---: |
+| [<img src="https://avatars0.githubusercontent.com/u/1533239?v=3" width="100px;"/><br /><sub>Jonathan Casarrubias</sub>](http://mean.expert/)<br />[💡](https://github.com/onixjs/examples/commits?author=jonathan-casarrubias) | [<img src="https://avatars1.githubusercontent.com/u/12107518?v=3" width="100px;"/><br /><sub>Andres David Jimenez</sub>](https://plus.google.com/+AndresJimenezS/posts)<br />[💡](https://github.com/onixjs/examples/commits?author=kattsushi) | [<img src="https://avatars0.githubusercontent.com/u/17414885?s=460&v=4" width="100px;"/><br /><sub>Miguel Serrano</sub>](https://github.com/Serranom4)<br />[💡](https://github.com/onixjs/examples/commits?author=Serranom4) |
+| :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
