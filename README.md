@@ -60,6 +60,13 @@ $ tns run ios
 $ tns platform add android
 $ tns run android
 ```
+**React Native App Example:**
+
+```sh
+$ cd onixjsReactNative
+$ npm install
+$ react-native run-ios
+```
 
 > **HINT:** Run many client applications at the same time and have fun watching how updates are reflected in any of these examples in real-time.
 
