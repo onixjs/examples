@@ -12,6 +12,7 @@ import {TodoService} from './todo.service';
 @Module({
   models: [TodoModel],
   services: [TodoService],
+  renderers: [],
   components: [TodoComponent],
   lifecycle: async (app, metadata, method): Promise<any> => {
     // before call
