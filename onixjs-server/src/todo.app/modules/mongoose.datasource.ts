@@ -1,5 +1,5 @@
 import {Mongoose, Schema} from 'mongoose';
-import {IDataSource, DataSource, IModel} from '@onixjs/core';
+import {IDataSource, DataSource, IModel, Constructor, OnixMessage} from '@onixjs/core';
 /**
  * @class MongooseDatasource
  * @author Jonathan Casarrubias
@@ -40,7 +40,7 @@ export class MongooseDatasource implements IDataSource {
    * a JSON schema and a model name in order to get a mongoose
    * model instance.
    */
-  register(name: string, model: IModel, schema: Schema): any {
-    return this.mongoose.model(name, schema);
+  register(Class: Constructor, model: OnixMessage, schema: Schema): any {
+    return this.mongoose.model(Class.name, schema);
   }
 }
