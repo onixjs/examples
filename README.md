@@ -63,7 +63,7 @@ $ tns run android
 **React Native App Example:**
 
 ```sh
-$ cd onixjsReactNative
+$ cd onixjs-reactnative
 $ npm install
 $ react-native run-ios
 ```

@@ -1,5 +1,5 @@
 {
     "apps": [
-        "TodoApp@todo.app"
+        "TodoApp@todo.app:8080"
     ]
 }

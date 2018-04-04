@@ -1,4 +1,4 @@
-import { IComponent, Inject, Component, RPC, Stream } from '@onixjs/core';
+import { IComponent, Inject, Component, RPC, Stream, OnixMessage } from '@onixjs/core';
 import { TodoService } from './todo.service';
 import { TodoModel } from './todo.model';
 import { EventEmitter } from 'events';
@@ -14,7 +14,7 @@ import { EventEmitter } from 'events';
 @Component({
   // Optional component level lifecycle
   // will execute on every RPC Call, do your magic here. :)
-  lifecycle: async (app, metadata, method): Promise<any> => {
+  lifecycle: async (models, message: OnixMessage, method): Promise<any> => {
     // before call
     const result = await method();
     // after call
