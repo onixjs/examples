@@ -1,7 +1,8 @@
 import { Component, State } from '@stencil/core';
 import { OnixClient } from '@onixjs/sdk';
 import { Browser } from '@onixjs/sdk/dist/adapters/browser.adapters';
-import { AppReference } from '@onixjs/sdk/dist/core/reference';
+import { AppReference } from '@onixjs/sdk/dist/core/app.reference';
+
 @Component({
   tag: 'my-app',
   styleUrl: 'my-app.css'
@@ -24,7 +25,6 @@ export class MyApp {
     // Setup Component
     this.setup();
   }
-
   /**
    * @method setup
    * @description This method will initialize the SDK, create a TodoApp Reference
@@ -34,7 +34,7 @@ export class MyApp {
     // Initialize the SDK
     await this.sdk.init();
     // Create an Application Reference
-    const todoApp = await this.sdk.AppReference('TodoApp');
+    const todoApp = this.sdk.AppReference('TodoApp');
     // Verify we got a valid AppReference, else throw the error.
     if (todoApp instanceof AppReference) {
       // Create Component Reference
