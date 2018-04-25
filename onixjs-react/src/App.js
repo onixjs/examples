@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { OnixClient, AppReference } from '@onixjs/sdk';
-import { Browser } from '@onixjs/sdk/dist/core/browser.adapters';
+import { Browser } from '@onixjs/sdk/dist/adapters/browser.adapters';
 
 class App extends Component {
 
@@ -54,7 +54,7 @@ class App extends Component {
     // Initialize the SDK
     await this.sdk.init();
     // Create an Application Reference
-    const todoApp = await this.sdk.AppReference('TodoApp');
+    const todoApp = this.sdk.AppReference('TodoApp');
     // Verify we got a valid AppReference, else throw the error.
     if (todoApp instanceof AppReference) {
       // Create Component Reference

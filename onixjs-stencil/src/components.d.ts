@@ -3,6 +3,9 @@
  * It contains typing information for all components that exist in this project
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
+
+import '@stencil/core';
+
 declare global {
   namespace JSX {
     interface Element {}
@@ -21,13 +24,16 @@ declare global {
 }
 
 
-import {
-  MyApp as MyApp
-} from './components/my-app/my-app';
-
 declare global {
-  interface HTMLMyAppElement extends MyApp, HTMLStencilElement {
+
+  namespace StencilComponents {
+    interface MyApp {
+
+    }
   }
+
+  interface HTMLMyAppElement extends StencilComponents.MyApp, HTMLStencilElement {}
+
   var HTMLMyAppElement: {
     prototype: HTMLMyAppElement;
     new (): HTMLMyAppElement;
@@ -45,8 +51,7 @@ declare global {
   }
   namespace JSXElements {
     export interface MyAppAttributes extends HTMLAttributes {
-      
-      
+
     }
   }
 }

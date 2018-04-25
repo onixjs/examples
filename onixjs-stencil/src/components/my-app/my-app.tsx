@@ -1,6 +1,6 @@
 import { Component, State } from '@stencil/core';
 import { OnixClient } from '@onixjs/sdk';
-import { Browser } from '@onixjs/sdk/dist/core/browser.adapters';
+import { Browser } from '@onixjs/sdk/dist/adapters/browser.adapters';
 import { AppReference } from '@onixjs/sdk/dist/core/reference';
 @Component({
   tag: 'my-app',

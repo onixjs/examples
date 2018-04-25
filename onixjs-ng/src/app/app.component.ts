@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { OnixClient, ComponentReference, AppReference} from '@onixjs/sdk';
-import { Browser } from '@onixjs/sdk/dist/core/browser.adapters';
+import { Browser } from '@onixjs/sdk/dist/adapters/browser.adapters';
 import { Observable } from 'rxjs/Observable';
 @Component({
   selector: 'app-root',
@@ -36,6 +36,11 @@ export class AppComponent implements OnInit {
    */
   public observable: Observable<{text: string}>;
   /**
+   * @constructor
+   * @param cdr
+   */
+  constructor(private cdr: ChangeDetectorRef) {}
+  /**
    * @method ngOnInit
    * @description This method will initialize the SDK, create a TodoApp Reference
    * and then define a listener for our stream of todos. (Real-Time)
@@ -44,7 +49,7 @@ export class AppComponent implements OnInit {
     // Initialize the SDK
     await this.sdk.init();
     // Create an Application Reference
-    const todoApp: AppReference | Error = await this.sdk.AppReference('TodoApp');
+    const todoApp: AppReference | Error = this.sdk.AppReference('TodoApp');
     // Verify we got a valid AppReference, else throw the error.
     if (todoApp instanceof AppReference) {
       // Create Component Reference
@@ -52,7 +57,11 @@ export class AppComponent implements OnInit {
       // Create an Observable that listens for the Todo Stream, so we use async on the template
       this.observable = Observable.create((observer) => {
         // Create a listTodos stream reference
-        this.componentRef.Method('listTodos').stream((todos) => observer.next(todos));
+        this.componentRef.Method('listTodos').stream((todos) => {
+          console.log('TODOS: ', todos);
+          observer.next(todos);
+          this.cdr.detectChanges();
+        });
       });
     } else {
       throw todoApp;

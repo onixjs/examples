@@ -14,7 +14,7 @@
 <script>
 /* eslint-disable */
 import { OnixClient, AppReference } from "@onixjs/sdk";
-import { Browser } from "@onixjs/sdk/dist/core/browser.adapters";
+import { Browser } from "@onixjs/sdk/dist/adapters/browser.adapters";
 export default {
   name: "Todo",
   data() {
@@ -50,7 +50,7 @@ export default {
       // Initialize the SDK
       await this.sdk.init();
       // Create an Application Reference
-      const todoApp = await this.sdk.AppReference("TodoApp");
+      const todoApp = this.sdk.AppReference("TodoApp");
       // Verify we got a valid AppReference, else throw the error.
       if (todoApp instanceof AppReference) {
         // Create Component Reference

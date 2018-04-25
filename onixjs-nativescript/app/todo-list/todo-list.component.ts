@@ -1,6 +1,6 @@
 import { Component, OnInit, NgZone } from "@angular/core";
 import { OnixClient, ComponentReference, AppReference} from '@onixjs/sdk/dist6';
-import { Nativescript } from '@onixjs/sdk/dist6/core/nativescript.adapters';
+import { Nativescript } from '@onixjs/sdk/dist6/adapters/nativescript.adapters';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
@@ -56,7 +56,7 @@ export class TodoListComponent implements OnInit {
     // Initialize the SDK
     await this.sdk.init();
     // Create an Application Reference
-    const todoApp: AppReference | Error = await this.sdk.AppReference('TodoApp')
+    const todoApp: AppReference | Error = this.sdk.AppReference('TodoApp')
     // Verify we got a valid AppReference, else throw the error.
     if (todoApp instanceof AppReference) {
       // Create Component Reference

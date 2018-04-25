@@ -7,7 +7,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, StatusBar, FlatList, Button, TextInput } from 'react-native';
 import { OnixClient, AppReference } from '@onixjs/sdk';
-import { Browser } from '@onixjs/sdk/dist/core/browser.adapters';
+import { Browser } from '@onixjs/sdk/dist/adapters/browser.adapters';
 
 export default class App extends Component {
 
@@ -75,7 +75,7 @@ export default class App extends Component {
     // Initialize the SDK
     await this.sdk.init();
     // Create an Application
-    const todoApp = await this.sdk.AppReference('TodoApp');
+    const todoApp = this.sdk.AppReference('TodoApp');
     // Verify we got a valid AppReference, else throw the error.
     if (todoApp instanceof AppReference) {
       // Create Component Reference
