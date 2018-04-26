@@ -1,0 +1,14 @@
+{
+  "name": "onixjs-electron",
+  "version": "1.0.0",
+  "description": "OnixJS - Electron Todo Example",
+  "author": "Miguel Serrano <miguelangelserrano4@gmail.com",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@onixjs/sdk": "^1.0.0-alpha.5",
+    "electron": "^1.8.4"
+  }
+}
