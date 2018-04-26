@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+li {
+  padding: 10px 5px;
+}
+
+li > button {
+  margin-left: 10px;
+}
