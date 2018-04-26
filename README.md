@@ -67,6 +67,13 @@ $ cd onixjsReactNative
 $ npm install
 $ react-native run-ios
 ```
+**Electron App Example:**
+
+```sh
+$ cd onixjs-electron
+$ npm install
+$ npm start
+```
 
 > **HINT:** Run many client applications at the same time and have fun watching how updates are reflected in any of these examples in real-time.
 
