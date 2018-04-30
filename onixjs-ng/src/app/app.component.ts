@@ -19,7 +19,8 @@ export class AppComponent implements OnInit {
     port: 3000,
     adapters: {
       http: Browser.HTTP,
-      websocket: Browser.WebSocket
+      websocket: Browser.WebSocket,
+      storage: Browser.LocalStorage
     }
   });
   /**
@@ -58,7 +59,6 @@ export class AppComponent implements OnInit {
       this.observable = Observable.create((observer) => {
         // Create a listTodos stream reference
         this.componentRef.Method('listTodos').stream((todos) => {
-          console.log('TODOS: ', todos);
           observer.next(todos);
           this.cdr.detectChanges();
         });

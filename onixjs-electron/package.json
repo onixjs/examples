@@ -8,7 +8,7 @@
     "start": "electron ."
   },
   "dependencies": {
-    "@onixjs/sdk": "^1.0.0-alpha.5",
+    "@onixjs/sdk": "^1.0.0-alpha.7",
     "electron": "^1.8.4"
   }
 }

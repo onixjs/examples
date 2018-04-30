@@ -19,7 +19,8 @@ export class MyApp {
       port: 3000,
       adapters: {
         http: Browser.HTTP,
-        websocket: Browser.WebSocket
+        websocket: Browser.WebSocket,
+        storage: Browser.LocalStorage
       }
     });
     // Setup Component
