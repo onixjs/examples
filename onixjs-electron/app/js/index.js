@@ -1,6 +1,6 @@
 'use strict';
 const {OnixClient, AppReference} = require('@onixjs/sdk');
-const {Browser} = require('@onixjs/sdk/dist/core/browser.adapters');
+const {Browser} = require('@onixjs/sdk/dist/adapters/browser.adapters');
 
 
 // Create SDK Instance
