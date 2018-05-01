@@ -1,4 +1,4 @@
-import { IComponent, Inject, Component, RPC, Stream, OnixMessage } from '@onixjs/core';
+import { IComponent, Inject, Component, RPC, Stream, OnixMessage, AllowEveryone } from '@onixjs/core';
 import { TodoService } from './todo.service';
 import { TodoModel } from './todo.model';
 import { EventEmitter } from 'events';
@@ -12,6 +12,8 @@ import { EventEmitter } from 'events';
  * It must implement the IComponent interface.
  */
 @Component({
+  // Allow Everyone for DemoPurposes
+  acl: [AllowEveryone],
   // Optional component level lifecycle
   // will execute on every RPC Call, do your magic here. :)
   lifecycle: async (models, message: OnixMessage, method): Promise<any> => {
