@@ -26,7 +26,8 @@ export class TodoListComponent implements OnInit {
     port: 3000,
     adapters: {
       http: Nativescript.HTTP,
-      websocket: Nativescript.WebSocket
+      websocket: Nativescript.WebSocket,
+      storage: Nativescript.LocalStorage
     }
   });
   /**

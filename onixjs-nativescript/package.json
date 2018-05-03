@@ -19,7 +19,7 @@
 		"@angular/platform-browser": "~5.2.0",
 		"@angular/platform-browser-dynamic": "~5.2.0",
 		"@angular/router": "~5.2.0",
-		"@onixjs/sdk": "^1.0.0-alpha.5",
+		"@onixjs/sdk": "^1.0.0-alpha.9",
 		"nativescript-angular": "~5.2.0",
 		"nativescript-theme-core": "~1.0.4",
 		"nativescript-websockets": "^1.4.0",
