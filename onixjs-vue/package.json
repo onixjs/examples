@@ -11,7 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "@onixjs/sdk": "^1.0.0-alpha.9",
+    "@onixjs/sdk": "^1.0.0-alpha.12",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

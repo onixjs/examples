@@ -51,7 +51,7 @@ export default {
       // Initialize the SDK
       await this.sdk.init();
       // Create an Application Reference
-      const todoApp = this.sdk.AppReference("TodoApp");
+      const todoApp = await this.sdk.AppReference("TodoApp");
       // Verify we got a valid AppReference, else throw the error.
       if (todoApp instanceof AppReference) {
         // Create Component Reference
