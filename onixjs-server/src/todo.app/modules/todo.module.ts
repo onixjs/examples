@@ -1,4 +1,5 @@
-import {Module, ModelProvider, OnixMessage, OnixMethod} from '@onixjs/core';
+import {Module, ModelProvider, OnixMethod} from '@onixjs/core';
+import {OnixMessage} from '@onixjs/sdk';
 import {TodoComponent} from './todo.component';
 import {TodoModel} from './todo.model';
 import {TodoService} from './todo.service';

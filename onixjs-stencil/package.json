@@ -15,7 +15,7 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@onixjs/sdk": "^1.0.0-alpha.12",
+    "@onixjs/sdk": "^1.0.0-beta.1",
     "@stencil/core": "^0.7.6",
     "@stencil/router": "latest"
   },

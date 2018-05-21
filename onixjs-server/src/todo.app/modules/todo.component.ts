@@ -1,7 +1,8 @@
-import { IComponent, Inject, Component, RPC, Stream, OnixMessage, AllowEveryone, ModelProvider, OnixMethod } from '@onixjs/core';
+import { IComponent, Inject, Component, RPC, Stream, AllowEveryone, ModelProvider, OnixMethod } from '@onixjs/core';
 import { TodoService } from './todo.service';
 import { TodoModel } from './todo.model';
 import { EventEmitter } from 'events';
+import {OnixMessage} from '@onixjs/sdk';
 /**
  * @class TodoComponent
  * @author Jonathan Casarrubias
